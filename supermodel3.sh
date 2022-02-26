@@ -18,7 +18,7 @@ rp_module_section="exp"
 rp_module_flags="sdl2"
 
 function depends_supermodel3() {
-    getDepends xinit libsdl2-dev libsdl2-net-dev libsdl2-net-2.0-0 x11-xserver-utils
+    getDepends xinit libsdl2-dev libsdl2-net-dev libsdl2-net-2.0-0 x11-xserver-utils xserver-xorg
     aptRemove xserver-xorg-legacy
 }
 
