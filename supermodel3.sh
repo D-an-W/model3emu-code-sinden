@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
- 
+
 # This file is part of The RetroPie Project
 #
 # The RetroPie Project is the legal property of its developers, whose names are
@@ -11,7 +11,7 @@
 
 rp_module_id="supermodel3"
 rp_module_desc="Super Model 3 Emulator"
-rp_module_help="ROM Addition: Copy your roms to $romdir/arcade"
+rp_module_help="ROM Addition: Copy your roms to $romdir/model3"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/DirtBagXon/model3emu-code-sinden/main/Docs/LICENSE.txt"
 rp_module_repo="git https://github.com/DirtBagXon/model3emu-code-sinden.git arm"
 rp_module_section="exp"
@@ -44,20 +44,12 @@ function install_supermodel3() {
 
 function configure_supermodel3() {
 
-    mkRomDir "arcade"
+    mkRomDir "model3"
 
     local allemu="/opt/retropie/configs/all/emulators.cfg"
-    local arcemu="/opt/retropie/configs/arcade/emulators.cfg"
 
-    # Cleanup old script style install (if present)
-    # This section should be removed a.s.a.p ......
-    if grep -q "Supermodel" "$allemu"; then
-            sed -i "/.*Supermodel.*/d" $allemu
-            sed -i "/.*Supermodel.*/d" $arcemu
-            rm -rf "/opt/retropie/emulators/supermodel"
-    fi
-
-    addEmulator 0 "$md_id" "arcade" "XINIT:$md_inst/$md_id -borders=2 %ROM%"
+    addEmulator 0 "$md_id" "model3" "XINIT:$md_inst/$md_id -borders=2 %ROM%"
+    addSystem "model3" "Sega Model 3 Engine" ".zip"
 
     [[ "$md_mode" == "remove" ]] && return
 
@@ -75,8 +67,8 @@ function configure_supermodel3() {
 
     local rom
     for rom in lostwsga lamachin oceanhun swtrilgy; do
-          if ! grep -q "arcade_$rom" "$allemu"; then
-             addLineToFile "arcade_$rom = \"$md_id\"" $allemu
+          if ! grep -q "model3_$rom" "$allemu"; then
+             addLineToFile "model3_$rom = \"$md_id\"" $allemu
           fi
     done
 
