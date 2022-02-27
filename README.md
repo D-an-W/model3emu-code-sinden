@@ -6,7 +6,14 @@ It installs to its own "Model 3" Emulator section not the default Arcade locatio
 
 It will attempt to track SVN commits.
 
-Additional arguments:
+### RetroPie package
+Use `supermodel3.sh` for _RetroPie-Setup_
+
+    wget https://raw.githubusercontent.com/D-an-W/model3emu-code-sinden/main/supermodel3.sh -O $HOME/RetroPie-Setup/scriptmodules/emulators/supermodel3.sh
+
+    sudo $HOME/RetroPie-Setup/retropie_setup.sh
+
+### Additional arguments:
 
     -borders=<n>      Sinden border configuration for gun games:
                       0=none [Default], 1=standard, 2=wide
@@ -15,7 +22,7 @@ Additional arguments:
 
 For `arm` based systems, clone the `arm` branch:
 
-    git clone --single-branch --branch arm https://github.com/DirtBagXon/model3emu-code-sinden.git
+    git clone --single-branch --branch arm https://github.com/D-an-W/model3emu-code-sinden.git
 
 
 ![model3](screenshot.png)
