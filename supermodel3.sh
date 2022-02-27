@@ -12,8 +12,8 @@
 rp_module_id="supermodel3"
 rp_module_desc="Super Model 3 Emulator"
 rp_module_help="ROM Addition: Copy your roms to $romdir/model3"
-rp_module_licence="GPL3 https://raw.githubusercontent.com/DirtBagXon/model3emu-code-sinden/main/Docs/LICENSE.txt"
-rp_module_repo="git https://github.com/DirtBagXon/model3emu-code-sinden.git arm"
+rp_module_licence="GPL3 https://raw.githubusercontent.com/D-an-W/model3emu-code-sinden/main/Docs/LICENSE.txt"
+rp_module_repo="git https://github.com/D-an-W/model3emu-code-sinden.git arm"
 rp_module_section="exp"
 rp_module_flags="sdl2"
 
