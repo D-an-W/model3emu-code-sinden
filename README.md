@@ -2,6 +2,8 @@
 
 This is a fork of [model3emu-code](https://www.supermodel3.com) to add native **Sinden** light gun support.
 
+It installs to its own "Model 3" Emulator section not the default Arcade location.
+
 It will attempt to track SVN commits.
 
 ### RetroPie package
