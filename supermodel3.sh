@@ -48,7 +48,7 @@ function configure_supermodel3() {
 
     local allemu="/opt/retropie/configs/all/emulators.cfg"
 
-    addEmulator 0 "$md_id" "model3" "XINIT:$md_inst/$md_id -borders=2 %ROM%"
+    addEmulator 0 "$md_id" "model3" "XINIT:$md_inst/$md_id -borders=1 %ROM%"
     addSystem "model3" "Sega Model 3 Engine" ".zip"
 
     [[ "$md_mode" == "remove" ]] && return
