@@ -9,7 +9,7 @@ It will attempt to track SVN commits.
 ### RetroPie package
 Use `supermodel3.sh` for _RetroPie-Setup_
 
-    wget https://raw.githubusercontent.com/DirtBagXon/model3emu-code-sinden/main/supermodel3.sh -O $HOME/RetroPie-Setup/scriptmodules/emulators/supermodel3.sh
+    wget https://raw.githubusercontent.com/D-an-W/model3emu-code-sinden/main/supermodel3.sh -O $HOME/RetroPie-Setup/scriptmodules/emulators/supermodel3.sh
 
     sudo $HOME/RetroPie-Setup/retropie_setup.sh
 
@@ -22,7 +22,7 @@ Use `supermodel3.sh` for _RetroPie-Setup_
 
 For `arm` based systems, clone the `arm` branch:
 
-    git clone --single-branch --branch arm https://github.com/DirtBagXon/model3emu-code-sinden.git
+    git clone --single-branch --branch arm https://github.com/D-an-W/model3emu-code-sinden.git
 
 
 ![model3](screenshot.png)
