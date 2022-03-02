@@ -28,6 +28,7 @@ function sources_supermodel3() {
 
 function build_supermodel3() {
     cp Makefiles/Makefile.UNIX Makefile
+    make clean
     make
     cp Docs/LICENSE.txt LICENSE
     cp bin/supermodel supermodel3
